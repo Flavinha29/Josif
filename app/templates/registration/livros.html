@@ -1,0 +1,9 @@
+<h2>Catálogo de Livros</h2>
+<ul>
+{% for livro in livros %}
+    <li>
+        <a href="{% url 'detalhes_livro' livro.pk %}">{{ livro.titulo }}</a>
+        - {{ livro.autor }}
+    </li>
+{% endfor %}
+</ul>
