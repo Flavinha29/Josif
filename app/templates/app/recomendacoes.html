@@ -1,0 +1,177 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container my-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="mb-0"><i class="bi bi-lightbulb"></i> Recomendações Personalizadas</h1>
+        <div>
+            <button class="btn btn-primary">
+                <i class="bi bi-arrow-clockwise"></i> Atualizar
+            </button>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex flex-wrap gap-2">
+                        <button class="btn btn-sm btn-primary">Para você</button>
+                        <button class="btn btn-sm btn-outline-primary">Populares</button>
+                        <button class="btn btn-sm btn-outline-primary">Novidades</button>
+                        <button class="btn btn-sm btn-outline-primary">Baseado no seu histórico</button>
+                        <button class="btn btn-sm btn-outline-primary">Recomendados pela turma</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Livro Recomendado 1 -->
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm card-hover">
+                <div class="position-relative">
+                    <img src="https://via.placeholder.com/400x250?text=Capa+1" class="card-img-top" alt="Capa do livro">
+                    <div class="position-absolute top-0 end-0 m-2">
+                        <span class="badge bg-success">Para você</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">A Ilha Misteriosa</h5>
+                    <p class="card-text text-muted">Jules Verne</p>
+                    <div class="mb-3">
+                        <span class="badge bg-primary me-1">Aventura</span>
+                        <span class="badge bg-warning text-dark">12+</span>
+                    </div>
+                    <p class="card-text">Um grupo de amigos descobre segredos numa ilha desconhecida. Recomendado porque você gosta de aventuras.</p>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <div class="d-flex justify-content-between">
+                        <button class="btn btn-sm btn-outline-primary">
+                            <i class="bi bi-bookmark"></i> Salvar
+                        </button>
+                        <button class="btn btn-sm btn-primary">
+                            <i class="bi bi-book"></i> Ler Agora
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Livro Recomendado 2 -->
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm card-hover">
+                <div class="position-relative">
+                    <img src="https://via.placeholder.com/400x250?text=Capa+2" class="card-img-top" alt="Capa do livro">
+                    <div class="position-absolute top-0 end-0 m-2">
+                        <span class="badge bg-info">Popular</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">O Pequeno Príncipe</h5>
+                    <p class="card-text text-muted">Antoine de Saint-Exupéry</p>
+                    <div class="mb-3">
+                        <span class="badge bg-primary me-1">Fábula</span>
+                        <span class="badge bg-warning text-dark">10+</span>
+                    </div>
+                    <p class="card-text">Uma história encantadora sobre amizade e amor. Recomendado por ser um clássico universal.</p>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <div class="d-flex justify-content-between">
+                        <button class="btn btn-sm btn-outline-primary">
+                            <i class="bi bi-bookmark"></i> Salvar
+                        </button>
+                        <button class="btn btn-sm btn-primary">
+                            <i class="bi bi-book"></i> Ler Agora
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Livro Recomendado 3 -->
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm card-hover">
+                <div class="position-relative">
+                    <img src="https://via.placeholder.com/400x250?text=Capa+3" class="card-img-top" alt="Capa do livro">
+                    <div class="position-absolute top-0 end-0 m-2">
+                        <span class="badge bg-warning text-dark">Baseado no histórico</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Viagem ao Centro da Terra</h5>
+                    <p class="card-text text-muted">Jules Verne</p>
+                    <div class="mb-3">
+                        <span class="badge bg-primary me-1">Aventura</span>
+                        <span class="badge bg-warning text-dark">12+</span>
+                    </div>
+                    <p class="card-text">Uma expedição científica transforma-se numa incrível aventura. Recomendado porque você leu "A Ilha Misteriosa".</p>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <div class="d-flex justify-content-between">
+                        <button class="btn btn-sm btn-outline-primary">
+                            <i class="bi bi-bookmark"></i> Salvar
+                        </button>
+                        <button class="btn btn-sm btn-primary">
+                            <i class="bi bi-book"></i> Ler Agora
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card border-0 shadow-sm mt-4">
+        <div class="card-header bg-white">
+            <h4 class="mb-0"><i class="bi bi-people-fill"></i> Recomendado pela sua turma</h4>
+        </div>
+        <div class="card-body">
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
+                <!-- Livro Recomendado por Colega 1 -->
+                <div class="col">
+                    <div class="card border-0 h-100">
+                        <img src="https://via.placeholder.com/200x300?text=Capa+4" class="card-img-top" alt="Capa do livro">
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-1">Harry Potter</h6>
+                            <small class="text-muted">Recomendado por Ana</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Livro Recomendado por Colega 2 -->
+                <div class="col">
+                    <div class="card border-0 h-100">
+                        <img src="https://via.placeholder.com/200x300?text=Capa+5" class="card-img-top" alt="Capa do livro">
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-1">Percy Jackson</h6>
+                            <small class="text-muted">Recomendado por Pedro</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Livro Recomendado por Colega 3 -->
+                <div class="col">
+                    <div class="card border-0 h-100">
+                        <img src="https://via.placeholder.com/200x300?text=Capa+6" class="card-img-top" alt="Capa do livro">
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-1">Diário de um Banana</h6>
+                            <small class="text-muted">Recomendado por Maria</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Livro Recomendado por Colega 4 -->
+                <div class="col">
+                    <div class="card border-0 h-100">
+                        <img src="https://via.placeholder.com/200x300?text=Capa+7" class="card-img-top" alt="Capa do livro">
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-1">O Hobbit</h6>
+                            <small class="text-muted">Recomendado por João</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

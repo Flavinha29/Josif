@@ -1,0 +1,218 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="mb-0"><i class="bi bi-bar-chart"></i> Meu Progresso</h1>
+        <div>
+            <span class="badge bg-primary fs-6">
+                <i class="bi bi-book"></i> 8 livros lidos
+            </span>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col-md-6 mb-3 mb-md-0">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-header bg-white">
+                    <h5 class="mb-0"><i class="bi bi-book"></i> Livros em Andamento</h5>
+                </div>
+                <div class="card-body">
+                    <!-- Livro 1 -->
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-2">
+                            <h6 class="mb-0">A Ilha Misteriosa</h6>
+                            <small class="text-muted">130/200 páginas</small>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Livro 2 -->
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-2">
+                            <h6 class="mb-0">Viagem ao Centro da Terra</h6>
+                            <small class="text-muted">50/180 páginas</small>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 28%;" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100">28%</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Livro 3 -->
+                    <div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <h6 class="mb-0">O Pequeno Príncipe</h6>
+                            <small class="text-muted">20/96 páginas</small>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 21%;" aria-valuenow="21" aria-valuemin="0" aria-valuemax="100">21%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-header bg-white">
+                    <h5 class="mb-0"><i class="bi bi-check-circle"></i> Livros Concluídos</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row row-cols-2 row-cols-md-3 g-2">
+                        <!-- Livro Concluído 1 -->
+                        <div class="col">
+                            <div class="card border-0 bg-light h-100">
+                                <img src="https://via.placeholder.com/100x150?text=Livro+1" class="card-img-top" alt="Livro">
+                                <div class="card-body p-2 text-center">
+                                    <small class="d-block">Diário de um Banana</small>
+                                    <div class="text-warning small">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Livro Concluído 2 -->
+                        <div class="col">
+                            <div class="card border-0 bg-light h-100">
+                                <img src="https://via.placeholder.com/100x150?text=Livro+2" class="card-img-top" alt="Livro">
+                                <div class="card-body p-2 text-center">
+                                    <small class="d-block">Harry Potter</small>
+                                    <div class="text-warning small">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Livro Concluído 3 -->
+                        <div class="col">
+                            <div class="card border-0 bg-light h-100">
+                                <img src="https://via.placeholder.com/100x150?text=Livro+3" class="card-img-top" alt="Livro">
+                                <div class="card-body p-2 text-center">
+                                    <small class="d-block">Percy Jackson</small>
+                                    <div class="text-warning small">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Ver Todos -->
+                        <div class="col">
+                            <div class="card border-0 bg-light h-100">
+                                <div class="card-body d-flex align-items-center justify-content-center">
+                                    <a href="#" class="text-decoration-none text-center">
+                                        <i class="bi bi-three-dots fs-4"></i>
+                                        <small class="d-block">Ver todos</small>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 mb-4 mb-md-0">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-header bg-white">
+                    <h5 class="mb-0"><i class="bi bi-calendar"></i> Histórico de Leitura</h5>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Data</th>
+                                    <th>Livro</th>
+                                    <th>Páginas</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>20/03</td>
+                                    <td>A Ilha Misteriosa</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr>
+                                    <td>19/03</td>
+                                    <td>Viagem ao Centro da Terra</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>18/03</td>
+                                    <td>O Pequeno Príncipe</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>17/03</td>
+                                    <td>A Ilha Misteriosa</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <td>16/03</td>
+                                    <td>Viagem ao Centro da Terra</td>
+                                    <td>12</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-header bg-white">
+                    <h5 class="mb-0"><i class="bi bi-graph-up"></i> Estatísticas</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <h6>Páginas lidas por dia</h6>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">14 páginas/dia</div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <h6>Tempo médio por livro</h6>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">12 dias/livro</div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h6>Gêneros preferidos</h6>
+                        <div class="progress mb-1" style="height: 10px;">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">Aventura</div>
+                        </div>
+                        <div class="progress mb-1" style="height: 10px;">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">Fantasia</div>
+                        </div>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">Comédia</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,223 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="mb-0"><i class="bi bi-award"></i> Minhas Conquistas</h1>
+        <div>
+            <span class="badge bg-primary fs-6">
+                <i class="bi bi-trophy-fill"></i> 5/15 conquistas
+            </span>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                    <ul class="nav nav-tabs" id="conquistasTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="conquistadas-tab" data-bs-toggle="tab" data-bs-target="#conquistadas" type="button" role="tab" aria-controls="conquistadas" aria-selected="true">
+                                <i class="bi bi-check-circle-fill"></i> Conquistadas
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="disponiveis-tab" data-bs-toggle="tab" data-bs-target="#disponiveis" type="button" role="tab" aria-controls="disponiveis" aria-selected="false">
+                                <i class="bi bi-unlock"></i> Disponíveis
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="todas-tab" data-bs-toggle="tab" data-bs-target="#todas" type="button" role="tab" aria-controls="todas" aria-selected="false">
+                                <i class="bi bi-list-ul"></i> Todas
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-content" id="conquistasTabContent">
+        <div class="tab-pane fade show active" id="conquistadas" role="tabpanel" aria-labelledby="conquistadas-tab">
+            <div class="row g-4">
+                <!-- Conquista 1 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-trophy-fill fs-1 text-warning mb-3"></i>
+                            <h5>Leitor Bronze</h5>
+                            <p class="text-muted">Ler 5 livros completos</p>
+                            <div class="progress mt-3">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Conquistado!</div>
+                            </div>
+                            <small class="text-muted">Conquistado em 15/02/2024</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Conquista 2 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-star-fill fs-1 text-secondary mb-3"></i>
+                            <h5>Crítico Literário</h5>
+                            <p class="text-muted">Avaliar 5 livros</p>
+                            <div class="progress mt-3">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Conquistado!</div>
+                            </div>
+                            <small class="text-muted">Conquistado em 10/01/2024</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Conquista 3 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-lightning-fill fs-1 text-danger mb-3"></i>
+                            <h5>Leitor Rápido</h5>
+                            <p class="text-muted">Ler um livro em menos de 7 dias</p>
+                            <div class="progress mt-3">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Conquistado!</div>
+                            </div>
+                            <small class="text-muted">Conquistado em 05/12/2023</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tab-pane fade" id="disponiveis" role="tabpanel" aria-labelledby="disponiveis-tab">
+            <div class="row g-4">
+                <!-- Conquista Disponível 1 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-trophy fs-1 text-warning mb-3"></i>
+                            <h5>Leitor Prata</h5>
+                            <p class="text-muted">Ler 10 livros completos</p>
+                            <div class="progress mt-3">
+                                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">5/10</div>
+                            </div>
+                            <small class="text-muted">Faltam 5 livros</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Conquista Disponível 2 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-bookmark-heart fs-1 text-primary mb-3"></i>
+                            <h5>Fã de Aventura</h5>
+                            <p class="text-muted">Ler 3 livros de aventura</p>
+                            <div class="progress mt-3">
+                                <div class="progress-bar" role="progressbar" style="width: 66%;" aria-valuenow="2" aria-valuemin="0" aria-valuemax="3">2/3</div>
+                            </div>
+                            <small class="text-muted">Falta 1 livro</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Conquista Disponível 3 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-emoji-smile fs-1 text-info mb-3"></i>
+                            <h5>Leitor Consistente</h5>
+                            <p class="text-muted">Ler por 7 dias consecutivos</p>
+                            <div class="progress mt-3">
+                                <div class="progress-bar" role="progressbar" style="width: 28%;" aria-valuenow="2" aria-valuemin="0" aria-valuemax="7">2/7</div>
+                            </div>
+                            <small class="text-muted">Faltam 5 dias</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tab-pane fade" id="todas" role="tabpanel" aria-labelledby="todas-tab">
+            <div class="row g-4">
+                <!-- Todas as conquistas (misturadas) -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-trophy-fill fs-1 text-warning mb-3"></i>
+                            <h5>Leitor Bronze</h5>
+                            <p class="text-muted">Ler 5 livros completos</p>
+                            <div class="progress mt-3">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Conquistado!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-trophy fs-1 text-warning mb-3"></i>
+                            <h5>Leitor Prata</h5>
+                            <p class="text-muted">Ler 10 livros completos</p>
+                            <div class="progress mt-3">
+                                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">5/10</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-star-fill fs-1 text-secondary mb-3"></i>
+                            <h5>Crítico Literário</h5>
+                            <p class="text-muted">Avaliar 5 livros</p>
+                            <div class="progress mt-3">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Conquistado!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-bookmark-heart fs-1 text-primary mb-3"></i>
+                            <h5>Fã de Aventura</h5>
+                            <p class="text-muted">Ler 3 livros de aventura</p>
+                            <div class="progress mt-3">
+                                <div class="progress-bar" role="progressbar" style="width: 66%;" aria-valuenow="2" aria-valuemin="0" aria-valuemax="3">2/3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-lightning-fill fs-1 text-danger mb-3"></i>
+                            <h5>Leitor Rápido</h5>
+                            <p class="text-muted">Ler um livro em menos de 7 dias</p>
+                            <div class="progress mt-3">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Conquistado!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-emoji-smile fs-1 text-info mb-3"></i>
+                            <h5>Leitor Consistente</h5>
+                            <p class="text-muted">Ler por 7 dias consecutivos</p>
+                            <div class="progress mt-3">
+                                <div class="progress-bar" role="progressbar" style="width: 28%;" aria-valuenow="2" aria-valuemin="0" aria-valuemax="7">2/7</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

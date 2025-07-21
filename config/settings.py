@@ -65,6 +65,7 @@ DATABASES = {
 
 # Configurações de Autenticação
 AUTH_USER_MODEL = 'app.Pessoa'  # Usando seu modelo customizado
+LOGIN_URL = '/login/'  # Esta é a linha que estava faltando
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 

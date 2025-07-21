@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="mb-0"><i class="bi bi-stars"></i> Desafios de Leitura</h1>
+        <div>
+            <span class="badge bg-primary fs-6">
+                <i class="bi bi-star-fill"></i> 3/5 completos
+            </span>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                    <ul class="nav nav-tabs" id="desafiosTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="ativos-tab" data-bs-toggle="tab" data-bs-target="#ativos" type="button" role="tab" aria-controls="ativos" aria-selected="true">
+                                <i class="bi bi-lightning-fill"></i> Ativos
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="completos-tab" data-bs-toggle="tab" data-bs-target="#completos" type="button" role="tab" aria-controls="completos" aria-selected="false">
+                                <i class="bi bi-check-circle-fill"></i> Completos
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="todos-tab" data-bs-toggle="tab" data-bs-target="#todos" type="button" role="tab" aria-controls="todos" aria-selected="false">
+                                <i class="bi bi-list-ul"></i> Todos
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-content" id="desafiosTabContent">
+        <div class="tab-pane fade show active" id="ativos" role="tabpanel" aria-labelledby="ativos-tab">
+            <!-- Desafio Ativo 1 -->
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                    <h4 class="mb-0">Desafio de Verão</h4>
+                    <span class="badge bg-primary">150 pontos</span>
+                </div>
+                <div class="card-body">
+                    <p>Leia 3 livros de aventura durante as férias de verão e ganhe pontos extras!</p>
+                    
+                    <div class="mb-3">
+                        <h6>Livros para ler:</h6>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge bg-light text-dark">A Ilha Misteriosa</span>
+                            <span class="badge bg-light text-dark">Viagem ao Centro da Terra</span>
+                            <span class="badge bg-light text-dark">Vinte Mil Léguas Submarinas</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <h6>Progresso:</h6>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 66%;" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100">2/3 livros</div>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between text-muted small">
+                        <div>
+                            <i class="bi bi-calendar"></i> Início: 01/12/2023
+                        </div>
+                        <div>
+                            <i class="bi bi-calendar-check"></i> Término: 28/02/2024
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <div class="d-grid">
+                        <button class="btn btn-primary">
+                            <i class="bi bi-eye"></i> Ver Detalhes
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desafio Ativo 2 -->
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                    <h4 class="mb-0">Maratona Literária</h4>
+                    <span class="badge bg-primary">200 pontos</span>
+                </div>
+                <div class="card-body">
+                    <p>Leia 5 livros de qualquer gênero em um mês e suba no ranking!</p>
+                    
+                    <div class="mb-3">
+                        <h6>Progresso:</h6>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">1/5 livros</div>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between text-muted small">
+                        <div>
+                            <i class="bi bi-calendar"></i> Início: 01/03/2024
+                        </div>
+                        <div>
+                            <i class="bi bi-calendar-check"></i> Término: 31/03/2024
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <div class="d-grid">
+                        <button class="btn btn-primary">
+                            <i class="bi bi-eye"></i> Ver Detalhes
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tab-pane fade" id="completos" role="tabpanel" aria-labelledby="completos-tab">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body text-center py-5">
+                    <i class="bi bi-trophy-fill fs-1 text-warning mb-3"></i>
+                    <h4>Você ainda não completou nenhum desafio</h4>
+                    <p class="text-muted">Participe dos desafios ativos para ganhar pontos e recompensas!</p>
+                    <button class="btn btn-primary mt-2">
+                        <i class="bi bi-stars"></i> Ver Desafios Ativos
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tab-pane fade" id="todos" role="tabpanel" aria-labelledby="todos-tab">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body text-center py-5">
+                    <i class="bi bi-list-check fs-1 text-primary mb-3"></i>
+                    <h4>Todos os desafios aparecerão aqui</h4>
+                    <p class="text-muted">Incluindo os ativos, completos e os que já terminaram</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

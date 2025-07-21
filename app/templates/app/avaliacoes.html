@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="mb-0"><i class="bi bi-star-fill"></i> Minhas Avaliações</h1>
+        <div>
+            <span class="badge bg-primary fs-6">
+                <i class="bi bi-star-fill"></i> 12 avaliações
+            </span>
+        </div>
+    </div>
+
+    <div class="card border-0 shadow-sm mb-4">
+        <div class="card-header bg-white">
+            <h4 class="mb-0"><i class="bi bi-search"></i> Buscar Avaliações</h4>
+        </div>
+        <div class="card-body">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label for="livro" class="form-label">Livro</label>
+                    <input type="text" class="form-control" id="livro" placeholder="Digite o nome do livro">
+                </div>
+                <div class="col-md-3">
+                    <label for="nota" class="form-label">Nota</label>
+                    <select class="form-select" id="nota">
+                        <option selected>Todas</option>
+                        <option>5 estrelas</option>
+                        <option>4 estrelas</option>
+                        <option>3 estrelas</option>
+                        <option>2 estrelas</option>
+                        <option>1 estrela</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="data" class="form-label">Data</label>
+                    <select class="form-select" id="data">
+                        <option selected>Mais recentes</option>
+                        <option>Mais antigas</option>
+                        <option>Último mês</option>
+                        <option>Últimos 3 meses</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card border-0 shadow-sm">
+        <div class="card-header bg-white">
+            <h4 class="mb-0"><i class="bi bi-list-stars"></i> Avaliações Recentes</h4>
+        </div>
+        <div class="card-body">
+            <!-- Avaliação 1 -->
+            <div class="mb-4 pb-3 border-bottom">
+                <div class="d-flex justify-content-between mb-2">
+                    <h5 class="mb-0">A Ilha Misteriosa</h5>
+                    <div class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                    </div>
+                </div>
+                <p class="text-muted">Avaliado em 15/02/2024</p>
+                <p>Adorei este livro! A história é muito emocionante e os personagens são incríveis. A parte em que descobrem o segredo da ilha foi minha favorita.</p>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-sm btn-outline-primary">
+                        <i class="bi bi-pencil"></i> Editar
+                    </button>
+                    <button class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-trash"></i> Excluir
+                    </button>
+                </div>
+            </div>
+
+            <!-- Avaliação 2 -->
+            <div class="mb-4 pb-3 border-bottom">
+                <div class="d-flex justify-content-between mb-2">
+                    <h5 class="mb-0">O Pequeno Príncipe</h5>
+                    <div class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+                <p class="text-muted">Avaliado em 10/01/2024</p>
+                <p>Um livro lindo que fala sobre amizade e amor de uma forma simples e profunda ao mesmo tempo. Recomendo para todas as idades!</p>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-sm btn-outline-primary">
+                        <i class="bi bi-pencil"></i> Editar
+                    </button>
+                    <button class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-trash"></i> Excluir
+                    </button>
+                </div>
+            </div>
+
+            <!-- Avaliação 3 -->
+            <div>
+                <div class="d-flex justify-content-between mb-2">
+                    <h5 class="mb-0">Diário de um Banana</h5>
+                    <div class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                </div>
+                <p class="text-muted">Avaliado em 05/12/2023</p>
+                <p>Divertido, mas um pouco repetitivo. Gostei das ilustrações e das situações engraçadas, mas esperava mais da história.</p>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-sm btn-outline-primary">
+                        <i class="bi bi-pencil"></i> Editar
+                    </button>
+                    <button class="btn btn-sm btn-outline-danger">
+                        <i class="bi bi-trash"></i> Excluir
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

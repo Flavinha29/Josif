@@ -9,9 +9,12 @@ from app.views import (
     UsuariosView,
     LivrosView,
     DetalhesLivroView,
+    RecomendacoesView,
     DesafiosView,
-    RecompensasView,
-    RankingView
+    AvaliacoesView,
+    RankingView,
+    ProgressoView,
+    ConquistasView
 )
 
 urlpatterns = [
@@ -32,7 +35,10 @@ urlpatterns = [
     path('livros/<int:pk>/', DetalhesLivroView.as_view(), name='detalhes_livro'),
     
     # Gamificação
+    path('recomendacoes/', RecomendacoesView.as_view(), name='recomendacoes'),
     path('desafios/', DesafiosView.as_view(), name='desafios'),
-    path('recompensas/', RecompensasView.as_view(), name='recompensas'),
+    path('avaliacoes/', AvaliacoesView.as_view(), name='avaliacoes'),
     path('ranking/', RankingView.as_view(), name='ranking'),
+    path('progresso/', ProgressoView.as_view(), name='progresso'),
+    path('conquistas/', ConquistasView.as_view(), name='conquistas'),
 ]
