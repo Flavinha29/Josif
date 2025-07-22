@@ -9,13 +9,13 @@ class IndexView(TemplateView):
     template_name = 'app/index.html'
 
 class CustomLoginView(LoginView):
-    template_name = 'app/registration/login.html'
+    template_name = 'registration/login.html'
 
 class CustomLogoutView(LogoutView):
     next_page = '/'
 
 class RegistroView(CreateView):
-    template_name = 'app/registration/registro.html'
+    template_name = 'registration/registro.html'
     success_url = '/login/'
 
 # Views para perfil e usuários
@@ -29,7 +29,7 @@ class PerfilView(LoginRequiredMixin, DetailView):
 
 class UsuariosView(LoginRequiredMixin, ListView):
     model = Pessoa
-    template_name = 'app/usuarios.html'
+    template_name = 'registration/usuarios.html'
     context_object_name = 'usuarios'
 
 # Views para livros
